@@ -1,0 +1,489 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap" style="width:100%; height: 800px;">
+                <img src="{% static 'main/images/hero.jpg' %}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>Funmi</h1>
+                                    <h4>Nehan Foundation</h4>
+                                </header><!-- .entry-header -->
+                                
+
+                                
+                                <header class="entry-header">
+                                	<br />
+                                <br />
+                                <br />
+                                    <h8>Here at Funmi Nehan Foundation, we touch the lives of the less privillaged and provide absolute care.</h8>
+                                  
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                    <a href="{% url 'about' %}" class="btn gradient-bg mr-2">Learn more</a><br />
+                                    <a href="{% url 'contact' %}" class="btn orange-border">Contact</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+
+            <div class="swiper-slide hero-content-wrap" style="width:100%; height: 800px;">
+                <img src="{% static 'main/images/hero_1.jpg' %}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>Funmi Nehan Foundation</h1>
+                                    <h4>Touching lives</h4>
+                                </header><!-- .entry-header -->
+
+                                <header class="entry-header">
+                                	<br />
+                                <br />
+                                <br />
+                                    <h8>Our number one goal is to provide the neccesary care every individual would ever need</h8>
+                                  
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                    <a href="{% url 'about' %}" class="btn gradient-bg mr-2">Learn more</a>
+                                    <a href="{% url 'contact' %}" class="btn orange-border">Contact</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+
+            <div class="swiper-slide hero-content-wrap" style="width:100%; height: 800px;">
+                <img src="{% static 'main/images/hero_2.jpg' %}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h1>Donate</h1>
+                                    <h4>4 a better world</h4>
+                                </header><!-- .entry-header -->
+
+                                <header class="entry-header">
+                                	<br />
+                                <br />
+                                <br />
+                                    <h8>Help us make donations, so we also can help make the world a better place.</h8>
+                                  
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                    <a href="{% url 'pre_donation' %}" class="btn gradient-bg mr-2">Make Donation</a>
+                                    <a href="{% url 'about' %}" class="btn orange-border">Learn More</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div><!-- .swiper-wrapper -->
+
+        <div class="pagination-wrap position-absolute w-100">
+            <div class="container">
+                <div class="swiper-pagination"></div>
+            </div><!-- .container -->
+        </div><!-- .pagination-wrap -->
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        </div>
+
+        <div class="swiper-button-prev flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        </div>
+    </div><!-- .hero-slider -->
+
+    <div class="home-page-icon-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box active">
+                        <figure class="d-flex justify-content-center">
+                            <img src="{% static 'main/images/hands-gray.png' %}" alt="">
+                            <img src="{% static 'main/images/hands-white.png' %}" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Collaboration</h3>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>Here at Funmi Nehan Foundation, we are as very much open to any collaboration as we are with our policies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="{% static 'main/images/donation-gray.png' %}" alt="">
+                            <img src="{% static 'main/images/donation-white.png' %}" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Love Giving</h3>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>We are interested in building a world where every individual can wear priceless smiles. We do that here at Funmi Nehan Foundation by sharing love to the less privillaged.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="{% static 'main/images/charity-gray.png' %}" alt="">
+                            <img src="{% static 'main/images/charity-white.png' %}" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Donations</h3>
+                        </header>
+
+                        <div class="entry-content">
+                            <p>We are open to Donations from any parts of the world and we bless the less privillaged with all of it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="home-page-welcome">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title">Watch our Recent Events</h2>
+                        </header><!-- .entry-header -->
+
+                        {% if events %}
+                        <div class="entry-content mt-5">
+                            <ul>
+                            	{% for each_event in events %}
+                            		<li><a style="color: white;" href="{{ each_event.video_url }}">{{ each_event.title }}</a></li>
+                            	{% endfor %}
+                            </ul>
+                        </div><!-- .entry-content -->
+                        {% else %}
+                        	<div class="entry-content mt-5">
+                        		<p>Nothing yet!</p>
+                        	</div>
+                        {% endif %}
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+
+				{% if event %}
+				{% for each_event in event %}
+                <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
+                    <iframe width="100%" height="400px" src="{{ each_event.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div><!-- .col -->
+                {% endfor %}
+                {% else %}
+                  <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
+              		<p>Nothing yet!</p>
+            	</div>
+               {% endif %}
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="home-page-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="upcoming-events">
+                        <div class="section-heading">
+                            <h2 class="entry-title">Recent Outreach</h2>
+                        </div><!-- .section-heading -->
+
+						{% if outreachs %}
+						{% for each_outreach in outreachs %}
+                        <div class="event-wrap d-flex flex-wrap justify-content-between">
+                            <figure class="m-0">
+                                <img width="100%" height="auto" src="{{ each_outreach.image.url }}" alt="image for {{ each_outreach.title }}">
+                            </figure>
+
+                            <div class="event-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0"><a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.title }}</a></h3>
+
+                                    <div class="posted-date">
+                                       <a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.pub_date }} </a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                       <a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.location }}</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                   <a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.body|truncatewords:15 }}</a>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer">
+                                    <a href="{% url 'outreach_detail' each_outreach.slug %}">Read More</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .event-content-wrap -->
+                        </div><!-- .event-wrap -->
+                        {% endfor %}
+                        
+                        {% else %}
+                        <div class="event-wrap d-flex flex-wrap justify-content-between">
+                        	<p>Nothing yet!</p>
+                        </div>
+                        {% endif %}
+                        
+                        
+                        <div class="entry-footer mt-5">
+                                    <a href="{% url 'outreach' %}" class="btn gradient-bg mr-2">See All Out-reaches</a>
+                                </div><!-- .entry-footer -->
+                        
+
+                       </div>
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6">
+                    <div class="featured-cause">
+                        <div class="section-heading">
+                            <h2 class="entry-title">Latest Outreach</h2>
+                        </div><!-- .section-heading -->
+		
+						{% if outreach %}
+						{% for each_outreach in outreach %}
+                        <div class="cause-wrap d-flex flex-wrap justify-content-between">
+                            <figure class="m-0">
+                                <img src="{{ each_outreach.image.url }}" width="100px" height="auto" alt="">
+                            </figure>
+
+                            <div class="cause-content-wrap">
+                                <header class="entry-header d-flex flex-wrap align-items-center">
+                                    <h3 class="entry-title w-100 m-0">
+                                    <a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.title }}</a></h3>
+
+                                    <div class="posted-date">
+                                        <a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.pub_date }}</a>
+                                    </div><!-- .posted-date -->
+
+                                    <div class="cats-links">
+                                        <a href="{% url 'outreach_detail' each_outreach.slug %}">{{ each_outreach.location }}</a>
+                                    </div><!-- .cats-links -->
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-content">
+                                    <p class="m-0">{{ each_outreach.body|truncatewords:15 }}</p>
+                                </div><!-- .entry-content -->
+
+                                <div class="entry-footer mt-5">
+                                    <a href="{% url 'outreach_detail' each_outreach.slug %}" class="btn gradient-bg mr-2">read more</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .cause-content-wrap -->
+
+                            <div class="fund-raised w-100">
+                                <div class="featured-fund-raised-bar barfiller">
+                                    <div class="tipWrap">
+                                        <span class="tip"></span>
+                                    </div><!-- .tipWrap -->
+
+                                    <span class="fill" data-percentage="99"></span>
+                                </div><!-- .fund-raised-bar -->
+
+                                <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                    <div class="fund-raised-total mt-4">
+                                       Funmi Nehan Foundation
+                                    </div><!-- .fund-raised-total -->
+
+                                    <div class="fund-raised-goal mt-4">
+                                        Satisfaction Level
+                                    </div><!-- .fund-raised-goal -->
+                                </div><!-- .fund-raised-details -->
+                            </div><!-- .fund-raised -->
+                        </div><!-- .cause-wrap -->
+                        {% endfor %}
+                        {% else %}
+                        	<div class="cause-wrap d-flex flex-wrap justify-content-between">
+                        		<p>Nothing yet!</p>
+                        	</div>
+                        {% endif %}
+                        
+                    </div><!-- .featured-cause -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+            <div class="row container">
+            	<br />
+            	<p>Help us help the less privillaged: 
+                <a href="{% url 'pre_donation' %}" class="btn orange-border">Make a Donation</a></p>
+            </div>
+        </div><!-- .container -->
+    </div><!-- .home-page-events -->
+
+    <div class="our-causes">
+        <div class="container">
+            <div class="row container">
+                <div class="coL-6">
+                    <div class="section-heading">
+                        <h2 class="entry-title">The Members</h2>
+                    </div><!-- .section-heading -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+
+			{% if members %}
+            <div class="row container">
+                <div class="col-12">
+                    <div class="swiper-container causes-slider">
+                        <div class="swiper-wrapper">
+                        	
+                        	{% for each_member in members %}
+                            <div class="swiper-slide">
+                                <div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="{{ each_member.image.url }}" alt="" width="100%" height="auto">
+
+                                        <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                            <a href="{% url 'member_detail' each_member.slug %}" class="btn gradient-bgs mr-2" style="background-color: white; color: black;">{{ each_member.post }}</a>
+                                        </div><!-- .figure-overlay -->
+                                    </figure>
+
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a href="{% url 'member_detail' each_member.slug %}">{{ each_member.name }}</a></h3>
+                                        </header><!-- .entry-header -->
+
+                                        <div class="entry-content">
+                                            <p class="m-0">{{ each_member.bio|truncatewords:15 }}</p>
+                                        </div><!-- .entry-content -->
+
+                                        <div class="fund-raised w-100">
+                                            <div class="fund-raised-bar-1 barfiller">
+                                                <div class="tipWrap">
+                                                    <span class="tip"></span>
+                                                </div><!-- .tipWrap -->
+
+                                                <span class="fill" data-percentage="99"></span>
+                                            </div><!-- .fund-raised-bar -->
+
+                                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
+                                                <div class="fund-raised-total mt-4">
+                                                    Funmi Nehan Foundation
+                                                </div><!-- .fund-raised-total -->
+
+                                                <div class="fund-raised-goal mt-4">
+                                                    Competency Level
+                                                </div><!-- .fund-raised-goal -->
+                                            </div><!-- .fund-raised-details -->
+                                        </div><!-- .fund-raised -->
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+                            </div><!-- .swiper-slide -->
+                            {% endfor %}
+                            
+                             
+                    </div><!-- .swiper-container -->
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next flex justify-content-center align-items-center">
+                        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                    </div>
+
+                    <div class="swiper-button-prev flex justify-content-center align-items-center">
+                        <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                    </div>
+                </div><!-- .col -->
+                <div class="entry-footer mt-5">
+                    <h3>Swipe Left to See More</h3>
+                </div><!-- .entry-footer -->
+            </div><!-- .row -->
+            {% else %}
+             <div class="row container">
+             	<p>Sorry, Nothing yet!</p>
+             </div>
+             {% endif %}
+            
+        </div><!-- .container -->
+    </div><!-- .our-causes -->
+   </div>
+
+    <div class="home-page-limestone">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="coL-12 col-lg-6">
+                    <div class="section-heading">
+                        <h2 class="entry-title">What we intend to do is to as much as possible provide help to the helpless.</h2>
+
+                        <p class="mt-5">Here at Funmi Nehan Foundation, the welfares of the less privillaged is our major concern.</p>
+                    </div><!-- .section-heading -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6">
+                    <div class="milestones d-flex flex-wrap justify-content-between">
+                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
+                            <div class="counter-box">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="{% static 'main/images/teamwork.png' %}" alt="">
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-baseline">
+                                    <div class="start-counter" data-to="{{ members.count }}" data-speed="2000"></div>
+                                </div>
+
+                                <h3 class="entry-title">Funmi Nehan Foundation Members</h3><!-- entry-title -->
+                            </div><!-- counter-box -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
+                            <div class="counter-box">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="{% static 'main/images/donation.png' %}" alt="">
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-baseline">
+                                    <div class="start-counter" data-to="{{ outreachs.count }}" data-speed="2000"></div>
+                                </div>
+
+                                <h3 class="entry-title">Out-reaches so far!</h3><!-- entry-title -->
+                            </div><!-- counter-box -->
+                        </div><!-- .col -->
+
+                        <div class="col-12 col-sm-4 mt-5 mt-lg-0">
+                            <div class="counter-box">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <img src="{% static 'main/images/dove.png' %}" alt="">
+                                </div>
+
+                                <div class="d-flex justify-content-center align-items-baseline">
+                                    <div class="start-counter" data-to="{{ events.count }}" data-speed="2000"></div>
+                                </div>
+
+                                <h3 class="entry-title">Events held!</h3><!-- entry-title -->
+                            </div><!-- counter-box -->
+                        </div><!-- .col -->
+                    </div><!-- .milestones -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .our-causes -->
+
+    {% endblock content %}

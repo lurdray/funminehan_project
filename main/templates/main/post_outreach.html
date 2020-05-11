@@ -1,0 +1,60 @@
+ {% extends 'main/base.html' %}
+ {% load static %}
+ {% block content %}
+ 
+ 
+ 
+ 	
+ 	<div class="contact-page-wrap">
+      	<div class="container">
+      	<br />
+      	<br />
+      	<br />
+            <div class="row">        	
+ 			 <div class="col-12 col-lg-7">
+				<div class="section-heading">
+                      <h2 class="entry-title">Post Some Outreach</h2>
+                </div><!-- .section-heading -->
+                    <form class="contact-form" method="post" enctype="multipart/form-data">
+                    	{% csrf_token %}
+                        <input name="title" type="text" required="required" placeholder="Title">
+                        <textarea name="body" required="required" rows="15" cols="6" placeholder="Body"></textarea>
+                         <input name="location" required="required" type="text" placeholder="Location">
+                         <input type="file" name="image" required="required" accept="image/*">
+                         
+
+                        <span>
+                            <input class="btn gradient-bg" type="submit" value="Post Outreach">
+                        </span>
+                    </form><!-- .contact-form -->
+
+                </div><!-- .col -->
+                
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="{% static 'main/images/donation-gray.png' %}" alt="">
+                            <img src="{% static 'main/images/donation-white.png' %}" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Total Outreach</h3>
+                        </header>
+                        <header class="entry-header">
+                            <h3 class="entry-title">{{ outreach_count }}</h3>
+                        </header>
+                    </div>   
+                </div>
+                
+                
+            </div>
+         </div>
+     </div>
+ 
+ 
+ 
+ 
+            
+           <br />
+           <br />
+{% endblock content %}

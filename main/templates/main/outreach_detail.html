@@ -1,0 +1,66 @@
+ {% extends 'main/base.html' %}
+ {% load static %}
+ {% block content %}
+ <div class="hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slides hero-content-wrap" style="width:100%; height: 400px;">
+                <img src="{{ outreach.image.url }}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h3>Learn why we went for this outreach</h3>
+                                </header><!-- .entry-header -->
+
+                               <header class="entry-header">
+                                	<br />
+                                    <h4>{{ outreach.title }}</h4><br />
+                                    <h6>Help us help the less privillaged</h6>
+                                    <h4><a style="color: white;" href="{% url 'pre_donation' %}" class="btn orange-border">Donate</a></h4>
+                                  
+                                </header><!-- .entry-header -->
+                                
+                                
+                                                                 
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div>
+    </div>
+<br>
+ 
+    
+    
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6 order-1 order-lg-6">
+                <div class="section-heading">
+                      <h2 class="entry-title">{{ outreach.title }}</h2>
+                </div><!-- .section-heading -->
+                <div class="donation-form-wraps">
+					 <b>{{ outreach.pub_date }}</b>
+                </div>
+                <br />
+                <br />
+                <div class="donation-form-wraps">
+					<img src="{{ outreach.image.url }}" width="100%" height="auto" alt="">  
+                </div>
+            </div>
+            <div class="col-6s col-lg-6 col-sm-6 col-md-6 order-1 order-lg-6">
+                   <p class="mt-5">{{ outreach.body }}</p>     
+                   <br /><br />
+                   <p>Help us help the less privillaged</p>
+                   <h4><a href="{% url 'pre_donation' %}" class="btn orange-border">Donate</a></h4>
+                </div><!-- .col -->
+                
+            
+        </div>
+    </div>
+    <br />
+    <br />
+    
+{% endblock content %}

@@ -1,0 +1,169 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Funmi Nehan Foundation</title>
+
+    <!-- Required meta tags -->
+    <meta name="description" content="{% block description %} {% endblock %}">
+	<meta name="keywords" content="{% block keywords %} {% endblock %}">
+	<meta name="author" content="{% block author %} {% endblock %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css' %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/font-awesome.min.css' %}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/elegant-fonts.css' %}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/themify-icons.css' %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/swiper.min.css' %}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+
+
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="{% url 'index' %}" rel="home">
+		                       <span><img class="d-block" src="{% static 'main/images/main_logo.PNG' %}" width='80' height='60' alt="logo"></span>
+                           </a>
+                            
+                           	<span><h4 style="color: orange;"><b>Funmi Nehan Foundation</b></h4></span>
+                            
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li><a href="{% url 'outreach' %}">Outreach</a></li>
+                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li><a href="{% url 'pre_donation' %}">Donate</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+    </header><!-- .site-header -->
+
+
+
+{% block content %}
+
+{% endblock content %}
+
+<footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about">
+                            <h2><a class="foot-logo" href="{% url 'index' %}"><img width="200" height="200" src="{% static 'main/images/main_logo.PNG' %}" alt=""></a></h2>
+
+                            <p>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privilege. Life is a gift and the only way to give back to the world is to Touch Lives.</p>
+
+                            <ul class="d-flex flex-wrap align-items-center">
+                                <li><a href="https://youtube.com/results?search_query=funmi+nehan+outreach"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/funmi_nehan_outreach"><i class="fa fa-instagram"></i></a></li>
+                               
+                            </ul>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <h2>Useful Links</h2>
+
+                        <ul>
+                            
+                            
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                             <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'index' %}">Outreach</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-latest-news">
+                            <h2>Funmi Nehan Foundation</h2>
+
+                            <p></p>
+                        </div><!-- .foot-latest-news -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul>
+                                <li><i class="fa fa-phone"></i><span>+234-807-965-6886</span></li>
+                                <li><i class="fa fa-phone"></i><span>+234-8163854902</span></li>
+
+                                <li><i class="fa fa-envelope"></i><span>funmioutreach@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>No.12, Ajanaku Street, off Salvation Bus Stop, Opedi Lagos.</span></li>
+                                 <li><i class="fa fa-map-marker"></i><span>Jatto Phase 2, Kilanko Area, Ilorin, Kwara State</span></li>
+                            </ul>
+                        </div><!-- .foot-contact -->
+
+                        <div class="subscribe-form">
+                            <form class="d-flex flex-wrap align-items-center">
+                                <input type="email" placeholder="Your email">
+                                <input type="submit" value="send">
+                            </form><!-- .flex -->
+                        </div><!-- .search-widget -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-bar -->
+    </footer><!-- .site-footer -->
+
+    <script type='text/javascript' src='{% static "main/js/jquery.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/jquery.collapsible.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/swiper.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/jquery.countdown.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/circle-progress.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/jquery.countTo.min.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/jquery.barfiller.js" %}'></script>
+    <script type='text/javascript' src='{% static "main/js/custom.js" %}'></script>
+    
+
+</body>
+</html>

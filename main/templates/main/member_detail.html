@@ -1,0 +1,59 @@
+ {% extends 'main/base.html' %}
+ {% load static %}
+ {% block content %}
+ <div class="hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slides hero-content-wrap" style="width:100%; height: 400px;">
+                <img src="{% static 'main/images/hero.jpg' %}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h4>About {{ member.name }}</h4>
+                                </header><!-- .entry-header -->
+                                
+                                <header class="entry-header">
+                                	<br />
+                                	<br />
+
+                                    <h6>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privilege. Life is a gift and the only way to give back to the world is to Touch Lives.</h6>
+                                    <h4><a style="color: white;" href="{% url 'about' %}" class="btn orange-border">Learn More</a></h4>
+                                  
+                                </header><!-- .entry-header -->
+
+
+                                
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div>
+    </div>
+<br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-md-6 order-1 order-lg-6">
+                <div class="section-heading">
+                      <h2 class="entry-title">{{ member.name }}</h2>
+                </div><!-- .section-heading -->
+                <div class="donation-form-wraps">
+					 <b>{{ member.post }}</b>
+                </div>
+                <div class="donation-form-wraps">
+					 <p class="mt-5">{{ member.bio }}</p>      
+                </div>
+            </div>
+            <div class="col-6s col-lg-6 col-sm-6 col-md-6 order-1 order-lg-6">
+                    <img src="{{ member.image.url }}" width="100%" height="auto" alt="">
+                </div><!-- .col -->
+        </div>
+    </div>
+    <br />
+    <br />
+
+{% endblock content %}

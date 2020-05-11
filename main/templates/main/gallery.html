@@ -1,0 +1,92 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+ <div class="hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide hero-content-wrap" style="width:100%; height: 400px;">
+                <img src="{% static 'main/images/hero_1.jpg' %}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h4>Funmi Nehan</h4>
+                                </header><!-- .entry-header -->
+                                <div>
+                                    <h5>Outreach Gallary</h5>
+                                </div>
+                                
+                                <header class="entry-header">
+                                	<br />
+                                <br />
+                                <br />
+                                    <h8>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privilege. Life is a gift and the only way to give back to the world is to Touch Lives.</h8>
+                                  
+                                </header><!-- .entry-header -->
+
+
+                                <div class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                    <a href="{% url 'about' %}" class="btn gradient-bg mr-2">Learn more</a>
+                                    <a href="{% url 'contact' %}" class="btn orange-border">Contact</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div>
+    </div>
+<br>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Our Gallery</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="portfolio-wrap">
+        <div class="container">
+            <div class="row portfolio-container">
+            	{% for member in members %}
+                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
+                    <div class="portfolio-cont">
+                        <a href="{% url 'member_detail' member.slug %}"><img src="{{ member.image.url }}" alt=""></a>
+
+                        <h3 class="entry-title"><a href="{% url 'member_detail' member.slug %}">{{ member.name }}</a></h3>
+                        <h4>{{ member.post }}</h4>
+                    </div>
+                </div>
+                {% endfor %}
+             </div>
+             <br />
+             <br />
+             
+			<div class="row portfolio-container">
+				{% for outreach in outreachs %}
+                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
+                    <div class="portfolio-cont">
+                        <a href="{% url 'outreach_detail' outreach.slug %}"><img src="{{ outreach.image.url }}" alt=""></a>
+
+                        <h3 class="entry-title"><a href="{% url 'outreach_detail' outreach.slug %}">{{ outreach.title }}</a></h3>
+                        <h4>{{ outreach.location }}</h4>
+                    </div>
+                </div>
+                {% endfor %}
+			</div>
+			<br />
+			<br />
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center mt-72">
+                    <a href="{% url 'index' %}" class="btn gradient-bg load-more-btns">Back Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

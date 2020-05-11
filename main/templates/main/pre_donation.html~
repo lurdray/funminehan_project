@@ -1,0 +1,36 @@
+ {% extends 'main/base.html' %}
+ {% load static %}
+ {% block content %}
+
+<div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="donation-form-wrap">
+                    <h3>Make your Donation to Funmi nehan Foundation</h3>
+                    
+                    
+                    <form class="donation-form" method="post" enctype="multipart/form-data">
+                    	{% csrf_token %}
+
+
+
+                        <div class="billing-information  d-flex flex-wrap justify-content-between align-items-center">
+                            <h4 class="w-100 mt-5 mb-3">Amount</h4>
+
+                            <input name="amount" type="number" placeholder="Amount">
+                            
+                           
+                        </div>
+
+                        <input class="btn gradient-bg mt-5" type="submit" value="Donate Now">
+                    </form>
+                    
+                                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+{% endblock content %}
+

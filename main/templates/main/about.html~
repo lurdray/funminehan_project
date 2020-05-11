@@ -1,0 +1,143 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+ <div class="hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slides hero-content-wrap"style="width:100%; height: 400px;">
+                <img src="{% static 'main/images/hero_4.jpg' %}" width="100%" height="auto" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h4>About Us</h4>
+                                </header><!-- .entry-header -->
+
+                                <header class="entry-header">
+                                	<br />
+                                <br />
+                                <br />
+                                    <h8>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privilege. Life is a gift and the only way to give back to the world is to Touch Lives.</h8>
+                                  
+                                </header><!-- .entry-header -->
+                                
+                                <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                                    <a href="{% url 'about' %}" class="btn gradient-bg mr-2">Learn more</a>
+                                    <a href="{% url 'contact' %}" class="btn orange-border">Contact</a>
+                                </div><!-- .entry-footer -->
+                                
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div>
+    </div>
+<br>
+    <div class="welcome-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 style="color: black" class="entry-title">Welcome to our Foundation</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>We stand together with our global neighbours. Together we can create a world where everyone can live a full life, free from poverty. Read more about our values.</p>
+                        </div><!-- .entry-content -->
+
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="{% static 'main/images/main_logo.PNG' %}" width="100%" height="auto" alt="welcome">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+    <br />
+
+    <div class="about-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_1">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Hard Work</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_2">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Pure Love</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_3">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Smart Ideas</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_4">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Good Decisions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-testimonial">
+        <div class="container">
+            <div class="row">
+            	{% for member in members %}
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>{{ member.bio|truncatewords:15 }}.</p><br />
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                        	<a href="{% url 'member_detail' member.slug %}">
+                            <img src="{{ member.image.url }}" alt="">
+
+                            <h4>{{ member.name }}, <br /><span>{{ member.post }}</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="help-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <h2>Help us so we can help others</h2>
+
+                    <a class="btn orange-border" href="{% url 'pre_donation' %}">Donate now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

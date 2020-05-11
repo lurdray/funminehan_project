@@ -1,0 +1,93 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+ <div class="hero-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slides hero-content-wrap" style="width:100%; height: 400px;">
+                <img src="{% static 'main/images/hero.jpg' %}" alt="">
+
+                <div class="hero-content-overlay position-absolute w-100 h-100">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
+                                <header class="entry-header">
+                                    <h4>Contact Us</h4>
+                                </header><!-- .entry-header -->
+
+                                <div class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                    <a href="{% url 'about' %}" class="btn gradient-bg mr-2">Learn more</a>
+                                    <a href="{% url 'contact' %}" class="btn orange-border">Contact</a>
+                                </div><!-- .entry-footer -->
+                            </div><!-- .col -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .hero-content-overlay -->
+            </div><!-- .hero-content-wrap -->
+        </div>
+    </div>
+<br>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Contact us</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="contact-page-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <div class="entry-content">
+                        <h2>Get In touch with us</h2>
+
+                        <p>Feel free to always reach out to us at Funmi Nehan Foundation. You may also contact us on our social media channels or leave a message here for us. <small>please note that we treat your emails private</small></p>
+
+                        <ul class="contact-social d-flex flex-wrap align-items-center">
+                            <li><a href="https://youtube.com/results?search_query=funmi+nehan+outreach"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://instagram.com/funmi_nehan_outreach"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            
+                        </ul>
+
+                        <ul class="contact-info p-0">
+                            <li><i class="fa fa-phone"></i><span>+234-807-965-6886</span></li>
+                            <li><i class="fa fa-phone"></i><span>+234-8163854902</span></li>
+                            <li><i class="fa fa-envelope"></i><span>funmioutreach@gmail.com</span></li>
+                            <li><i class="fa fa-map-marker"></i><span>No.12, Ajanaku Street, off Salvation Bus Stop, Opedi Lagos.</span></li>
+                            <li><i class="fa fa-map-marker"></i><span>Jatto Phase 2, Kilanko Area, Ilorin, Kwara State.</span></li>
+                        </ul>
+                    </div>
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-7">
+                    <form class="contact-form" method="post" enctype="multipart/form-data">
+                    	{% csrf_token %}
+                        <input name="name" type="text" placeholder="Your Name">
+                        <input name="email" type="email" placeholder="Email">
+                        <textarea name="message" rows="15" cols="6" placeholder="Messages"></textarea>
+
+                        <span>
+                            <input class="btn gradient-bg" type="submit" value="Contact us">
+                        </span>
+                    </form><!-- .contact-form -->
+
+                </div><!-- .col -->
+            </div>
+
+            
+           </div>
+           
+           <br />
+           <br />
+{% endblock content %}
+
+
+
+
+

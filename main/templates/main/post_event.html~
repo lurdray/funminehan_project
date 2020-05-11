@@ -1,0 +1,62 @@
+ {% extends 'main/base.html' %}
+ {% load static %}
+ {% block content %}
+ 
+ 
+ 
+ 	
+ 	<div class="contact-page-wrap">
+      	<div class="container">
+      	<br />
+      	<br />
+      	<br />
+            <div class="row">        	
+ 			 <div class="col-12 col-lg-7">
+				<div class="section-heading">
+                      <h2 class="entry-title">Post Event</h2>
+                </div><!-- .section-heading -->
+                    <form class="contact-form" method="post" enctype="multipart/form-data">
+                    	{% csrf_token %}
+                        <input name="title" type="text" required="required" placeholder="Event Title">
+                         <input name="video_url" required="required" type="text" placeholder="Link to the Video">
+                         <b>Please make sure to enter to correct Youtube Video Link(url)</b>  
+                         <br />
+                         <p>To copy a youtube video<p>
+                         <small>Head to the video on youtube, copy the link on the upper tab bar or hold the video screen and click COPY.
+                         Then after Paste the link here</small>
+
+                        <span>
+                            <input class="btn gradient-bg" type="submit" value="Post Event">
+                        </span>
+                    </form><!-- .contact-form -->
+
+                </div><!-- .col -->
+                
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <figure class="d-flex justify-content-center">
+                            <img src="{% static 'main/images/donation-gray.png' %}" alt="">
+                            <img src="{% static 'main/images/donation-white.png' %}" alt="">
+                        </figure>
+
+                        <header class="entry-header">
+                            <h3 class="entry-title">Total Events</h3>
+                        </header>
+                        <header class="entry-header">
+                            <h3 class="entry-title">{{ event_count }}</h3>
+                        </header>
+                    </div>   
+                </div>
+                
+                
+            </div>
+         </div>
+     </div>
+ 
+ 
+ 
+ 
+            
+           <br />
+           <br />
+{% endblock content %}
