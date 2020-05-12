@@ -446,7 +446,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="{{ members.count }}" data-speed="2000"></div>
+                                    <div class="start-counter" data-to="{{ member_count }}" data-speed="2000"></div>
                                 </div>
 
                                 <h3 class="entry-title">Funmi Nehan Foundation Members</h3><!-- entry-title -->
@@ -460,7 +460,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="{{ outreachs.count }}" data-speed="2000"></div>
+                                    <div class="start-counter" data-to="{{ outreach_count }}" data-speed="2000"></div>
                                 </div>
 
                                 <h3 class="entry-title">Out-reaches so far!</h3><!-- entry-title -->
@@ -474,7 +474,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center align-items-baseline">
-                                    <div class="start-counter" data-to="{{ events.count }}" data-speed="2000"></div>
+                                    <div class="start-counter" data-to="{{ event_count }}" data-speed="2000"></div>
                                 </div>
 
                                 <h3 class="entry-title">Events held!</h3><!-- entry-title -->

@@ -47,7 +47,13 @@ def IndexFunc(request):
 		outreachs = Outreach.objects.order_by('-pub_date')[1:4]
 		members = Member.objects.order_by('-pub_date')
 		
-		context ={"event": event, "events": events, "outreach": outreach, "outreachs": outreachs, "members": members}
+		event_count = Event.objects.all().count()
+		outreach_count = Outreach.objects.all().count()
+		member_count = Member.objects.all().count()
+		
+		#return HttpResponse(event_count)
+		
+		context ={"event_count": event_count, "outreach_count": outreach_count, "member_count": member_count, "event": event, "events": events, "outreach": outreach, "outreachs": outreachs, "members": members}
 		return render(request, 'main/index.html', context)
 		
 		
