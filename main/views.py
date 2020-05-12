@@ -88,10 +88,11 @@ def PostOutreachFunc(request):
 	if request.method == "POST":
 		title = request.POST.get("title")
 		body = request.POST.get("body")
+		location = request.POST.get("location")
 		image = request.FILES["image"]
 		pub_date = timezone.now()
 		
-		outr = Outreach.objects.create(title=title, body=body, image=image, pub_date=pub_date, slug=title)
+		outr = Outreach.objects.create(title=title, body=body, image=image, location=location, pub_date=pub_date, slug=title)
 		outr.save()
 		
 		return HttpResponseRedirect(reverse("post_outreach"))
