@@ -82,7 +82,7 @@
                         <div class="foot-about">
                             <h2><a class="foot-logo" href="{% url 'index' %}"><img width="200" height="200" src="{% static 'main/images/main_logo.PNG' %}" alt=""></a></h2>
 
-                            <p>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privilege. Life is a gift and the only way to give back to the world is to Touch Lives.</p>
+                            <p>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</p>
 
                             <ul class="d-flex flex-wrap align-items-center">
                                 <li><a href="https://youtube.com/results?search_query=funmi+nehan+outreach"><i class="fa fa-youtube"></i></a></li>

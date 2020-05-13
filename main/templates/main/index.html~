@@ -22,7 +22,7 @@
                                 	<br />
                                 <br />
                                 <br />
-                                    <h8>Here at Funmi Nehan Foundation, we touch the lives of the less privillaged and provide absolute care.</h8>
+                                    <h8>Here at Funmi Nehan Foundation, we touch the lives of the less privileged and provide absolute care.</h8>
                                   
                                 </header><!-- .entry-header -->
 
@@ -145,7 +145,7 @@
                         </header>
 
                         <div class="entry-content">
-                            <p>We are interested in building a world where every individual can wear priceless smiles. We do that here at Funmi Nehan Foundation by sharing love to the less privillaged.</p>
+                            <p>We are interested in building a world where every individual can wear priceless smiles. We do that here at Funmi Nehan Foundation by sharing love to the less privileged.</p>
                         </div>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                         </header>
 
                         <div class="entry-content">
-                            <p>We are open to Donations from any parts of the world and we bless the less privillaged with all of it.</p>
+                            <p>We are open to Donations from any parts of the world and we bless the less privileged with all of it.</p>
                         </div>
                     </div>
                 </div>
@@ -334,7 +334,7 @@
             </div><!-- .row -->
             <div class="row container">
             	<br />
-            	<p>Help us help the less privillaged: 
+            	<p>Help us help the less privileged: 
                 <a href="{% url 'pre_donation' %}" class="btn orange-border">Make a Donation</a></p>
             </div>
         </div><!-- .container -->
@@ -433,7 +433,7 @@
                     <div class="section-heading">
                         <h2 class="entry-title">What we intend to do is to as much as possible provide help to the helpless.</h2>
 
-                        <p class="mt-5">Here at Funmi Nehan Foundation, the welfares of the less privillaged is our major concern.</p>
+                        <p class="mt-5">Here at Funmi Nehan Foundation, the welfares of the less privileged is our major concern.</p>
                     </div><!-- .section-heading -->
                 </div><!-- .col -->
 

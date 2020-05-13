@@ -18,7 +18,7 @@
                                 	<br />
                                 	<br />
 
-                                    <h6>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privilege. Life is a gift and the only way to give back to the world is to Touch Lives.</h6>
+                                    <h6>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</h6>
                                     <h4><a style="color: white;" href="{% url 'about' %}" class="btn orange-border">Learn More</a></h4>
                                   
                                 </header><!-- .entry-header -->
