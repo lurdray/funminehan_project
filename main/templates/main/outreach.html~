@@ -5,7 +5,7 @@
  <div class="hero-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slides hero-content-wrap" style="width:100%; height: 600px;">
-                <img src="{% static 'main/images/hero_3.jpg' %}" alt="">
+                <img src="{% static 'main/images/outreach.jpg' %}" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
