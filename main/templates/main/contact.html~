@@ -54,14 +54,17 @@
                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             
                         </ul>
-
+                        
                         <ul class="contact-info p-0">
-                            <li><i class="fa fa-phone"></i><span>+234-807-965-6886</span></li>
-                            <li><i class="fa fa-phone"></i><span>+234-8163854902</span></li>
-                            <li><i class="fa fa-envelope"></i><span>funmioutreach@gmail.com</span></li>
-                            <li><i class="fa fa-map-marker"></i><span>No.12, Ajanaku Street, off Salvation Bus Stop, Opedi Lagos.</span></li>
-                            <li><i class="fa fa-map-marker"></i><span>Jatto Phase 2, Kilanko Area, Ilorin, Kwara State.</span></li>
-                        </ul>
+                            	<li><i class="fa fa-phone"></i><span>+234 803 502 3999</span></li>
+                                <li><i class="fa fa-phone"></i><span>+234-807-965-6886</span></li>
+                                <li><i class="fa fa-phone"></i><span>+234-8163854902</span></li>
+
+                                <li><i class="fa fa-envelope"></i><span>funmioutreach@gmail.com</span></li>
+                                <li><i class="fa fa-map-marker"></i><span>12 Unity Crescent off Fola Agoro road close to Oluwadare bus stop,Akoka, Lagos State.</span></li>
+                                 <li><i class="fa fa-map-marker"></i><span>Jatto Phase 2, Kilanko Area, Ilorin, Kwara State</span></li>
+                            </ul>
+
                     </div>
                 </div><!-- .col -->
 
