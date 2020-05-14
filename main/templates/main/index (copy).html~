@@ -3,10 +3,9 @@
 
 {% block content %}
     <div class="swiper-container hero-slider">
-		<div class="slider"> 
-				  <!-- picture 01 -->
-				  <div class="slide active-slide hero-content-wrap" style="width:100%; height: 800px;">
-					 <img src="{% static 'main/images/first.jpg' %}" alt="">
+        <div class="slider"> 
+            <div class="slide hero-content-wrap" style="width:100%; height: 800px;">
+                <img src="{% static 'main/images/first.jpg' %}" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
@@ -36,9 +35,9 @@
                     </div><!-- .container -->
                 </div><!-- .hero-content-overlay -->
             </div><!-- .hero-content-wrap -->
-				  <!-- picture 02 -->
-				  <div class="slide active-slide hero-content-wrap" style="width:100%; height: 800px;">
-					<img src="{% static 'main/images/second.jpg' %}" alt="">
+
+            <div class="slide hero-content-wrap" style="width:100%; height: 800px;">
+                <img src="{% static 'main/images/second.jpg' %}" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
@@ -66,9 +65,9 @@
                     </div><!-- .container -->
                 </div><!-- .hero-content-overlay -->
             </div><!-- .hero-content-wrap -->
-				  <!-- picture 03 -->
-				  <div class="slide active-slide hero-content-wrap" style="width:100%; height: 800px;">
-					 <img src="{% static 'main/images/third.jpg' %}" alt="">
+
+            <div class="slide hero-content-wrap" style="width:100%; height: 800px;">
+                <img src="{% static 'main/images/third.jpg' %}" alt="">
 
                 <div class="hero-content-overlay position-absolute w-100 h-100">
                     <div class="container h-100">
@@ -97,21 +96,21 @@
                 </div><!-- .hero-content-overlay -->
             </div><!-- .hero-content-wrap -->
         </div><!-- .swiper-wrapper -->
-				  
-				</div>  
-				<!-- Slider nav -->
-				<div class="slider-nav"> 
-				  <a href="" class="arrow-prev"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
-				  <ul class="slider-dots">
-					<li class="dot active-dot">&bull;</li>
-					<li class="dot">&bull;</li>
-					<li class="dot">&bull;</li>
-					<li class="dot">&bull;</li>
-					<li class="dot">&bull;</li>
-				  </ul>
-				  <a href="" class="arrow-next"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a> 
-		</div>
-		<!--End of slide show-->
+
+        <div class="pagination-wrap position-absolute w-100">
+            <div class="container">
+                <div class="swiper-pagination"></div>
+            </div><!-- .container -->
+        </div><!-- .pagination-wrap -->
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+        </div>
+
+        <div class="swiper-button-prev flex justify-content-center align-items-center">
+            <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+        </div>
     </div><!-- .hero-slider -->
 
     <div class="home-page-icon-boxes">
@@ -488,53 +487,3 @@
     </div><!-- .our-causes -->
 
     {% endblock content %}
-    
-    
-    
-    
-    <div class="slider"> 
-		  <!-- picture 01 -->
-		  <div class="slide active-slide">
-			<div class="container">
-				 <img src="http://dogsdiscovered.com/wp-content/uploads/2011/03/growling-dog.jpg"> 
-
-			</div>
-		  </div>
-		  <!-- picture 02 -->
-		  <div class="slide">
-			<div class="container">
-				<img src="https://pbs.twimg.com/profile_images/498611745100156928/1x9OADbM_400x400.jpeg"> 
-			</div>
-		  </div>
-		  <!-- picture 03 -->
-		  <div class="slide">
-			<div class="container">
-				<img src="https://pbs.twimg.com/profile_images/473535319090819074/6j-F-_N-_400x400.jpeg">
-			</div>
-		  </div>
-		  <!-- picture 04 -->
-		  <div class="slide">
-			<div class="container">
-				 <img src="https://cdn2.bigcommerce.com/server3800/b0iqeya/product_images/uploaded_images/wet-dog.png?t=1409100694">
-			</div>
-		  </div>
-		  <!-- picture 05 -->
-		  <div class="slide">
-			<div class="container">
-				 <img src="https://4.bp.blogspot.com/_4vn24YA-Rc4/Sm6yCChb-PI/AAAAAAAAA8Q/gS5WgIYb754/s400/dogs+color+vision.PNG">
-			</div>
-		  </div>
-		</div>  
-		<!-- Slider nav -->
-		<div class="slider-nav"> 
-		  <a href="" class="arrow-prev"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png"></a>
-		  <ul class="slider-dots">
-			<li class="dot active-dot">&bull;</li>
-			<li class="dot">&bull;</li>
-			<li class="dot">&bull;</li>
-			<li class="dot">&bull;</li>
-			<li class="dot">&bull;</li>
-		  </ul>
-		  <a href="" class="arrow-next"><img src="https://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png"></a> 
-</div>
-<!--End of slide show-->
