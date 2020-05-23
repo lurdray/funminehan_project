@@ -12,10 +12,10 @@
                         <div class="row h-100">
                             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center align-items-start">
                                 <header class="entry-header">
-                                    <h4>Funmi Nehan</h4>
+                                    <h4>Funmi Nehan Foundation</h4>
                                 </header><!-- .entry-header -->
                                 <div>
-                                    <h5>Our Out-reaches</h5>
+                                    <h5>Our Monthly Outreach</h5>
                                 </div>
                                 
                                 <header class="entry-header">
@@ -42,12 +42,21 @@
     
         
     
-    
+   <br />
+<br />
    <div class="page-header">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Our Out-reaches</h1>
+                   <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 style="color: black" class="entry-title">Our Monthly Outreach</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-contents mt-5s">
+                        </div><!-- .entry-content -->
+
+                    </div><!-- .welcome-content -->
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->

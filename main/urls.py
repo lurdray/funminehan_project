@@ -8,6 +8,7 @@ urlpatterns = [
     path('contact/', views.ContactFunc, name="contact"),
     path('gallery/', views.GalleryFunc, name="gallery"),
     path('outreach/', views.OutreachFunc, name="outreach"),
+    path('member/', views.MemberFunc, name="member"),
     path('outreach/<slug:slug>/', views.OutreachDetailFunc, name="outreach_detail"),
     path('member/<slug:slug>/', views.MemberDetailFunc, name="member_detail"),
     

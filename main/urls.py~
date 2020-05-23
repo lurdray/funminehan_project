@@ -8,12 +8,12 @@ urlpatterns = [
     path('contact/', views.ContactFunc, name="contact"),
     path('gallery/', views.GalleryFunc, name="gallery"),
     path('outreach/', views.OutreachFunc, name="outreach"),
+    path('member/', views.MemberFunc, name="member"),
     path('outreach/<slug:slug>/', views.OutreachDetailFunc, name="outreach_detail"),
     path('member/<slug:slug>/', views.MemberDetailFunc, name="member_detail"),
     
      path('donation/', views.PreDonationFunc, name="pre_donation"),
     path('donation/<int:donation_id>/', views.DonationFunc, name="donation"),
-    path('complete/', views.paymentComplete, name="complete"),
     
     path('postoutreach/', views.PostOutreachFunc, name="post_outreach"),
     path('postmember/', views.PostMemberFunc, name="post_member"),

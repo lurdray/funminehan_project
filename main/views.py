@@ -119,7 +119,7 @@ def PostMemberFunc(request):
 		image = request.FILES["image"]
 		pub_date = timezone.now()
 		
-		mb = Member.objects.create(name=name, post=post, bio=bio, image=image, pub_date=pub_date)
+		mb = Member.objects.create(name=name, post=post, bio=bio, image=image, pub_date=pub_date, slug=name)
 		mb.save()
 		
 		return HttpResponseRedirect(reverse("post_member"))
@@ -183,6 +183,24 @@ def OutreachFunc(request):
 		return render(request, 'main/outreach.html', context)
 		
 		
+		
+def MemberFunc(request):
+
+	if request.method == "POST":
+		pass
+		
+	else:
+		outreachs = Outreach.objects.order_by('-pub_date')
+		members = Member.objects.order_by('-pub_date')
+		events = Event.objects.order_by('-pub_date')[1:6]
+		event = Event.objects.order_by('-pub_date')[:1]
+		context = {"outreachs": outreachs, "members": members, "events": events, "event": event}
+		
+		return render(request, 'main/member.html', context)
+		
+	
+	
+	
 
 def OutreachDetailFunc(request, slug):
 

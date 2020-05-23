@@ -15,14 +15,14 @@
                                     <h4>Funmi Nehan Foundation</h4>
                                 </header><!-- .entry-header -->
                                 <div>
-                                    <h5>Our Monthly Outreach</h5>
+                                    <h5>Our Team Members</h5>
                                 </div>
                                 
                                 <header class="entry-header">
                                 	<br />
                                 <br />
                                 <br />
-                                    <h8>At Funmi Nehan Foundation, we go on out reaches to touch lives and as much as possible bring a halt to the low living standards of the less privileged.</h8>
+                                    <h8>We are The FN Foundation , a Non-profit organisation duly incorporated and registered in Nigeria under the Corporate Affairs Commissions!.</h8>
                                   
                                 </header><!-- .entry-header -->
 
@@ -50,7 +50,7 @@
                 <div class="col-12">
                    <div class="welcome-content">
                         <header class="entry-header">
-                            <h2 style="color: black" class="entry-title">Our Monthly Outreach</h2>
+                            <h2 style="color: black" class="entry-title">Our Team Members</h2>
                         </header><!-- .entry-header -->
 
                         <div class="entry-contents mt-5s">
@@ -64,20 +64,40 @@
 
     <div class="portfolio-wrap">
         <div class="container">
+        	<br />
+			<br />
+			
+			{% if members %}
+			<div class="row">
+				{% for each_member in members %}
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="cause-wrap">
+                                    <figure class="m-0">
+                                        <img src="{{ each_member.image.url }}" alt="" width="100%" height="auto">
+                                    </figure>
 
-             
-			<div class="row portfolio-container">
-				{% for outreach in outreachs %}
-                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="{% url 'outreach_detail' outreach.slug %}"><img src="{{ outreach.image.url }}" alt=""></a>
+                                    <div class="cause-content-wrap">
+                                        <header class="entry-header d-flex flex-wrap align-items-center">
+                                            <h3 class="entry-title w-100 m-0"><a href="{% url 'member_detail' each_member.slug %}">{{ each_member.name }}</a>|<small style="color: orange">{{ each_member.post }}</small></h3>
+                                             <p class="m-0">{{ each_member.bio|truncatewords:15 }}</p>
+                                        </header><!-- .entry-header -->
 
-                        <h3 class="entry-title"><a href="{% url 'outreach_detail' outreach.slug %}">{{ outreach.title }}</a></h3>
-                        <h4>{{ outreach.location }}</h4>
-                    </div>
-                </div>
-                {% endfor %}
+                                    </div><!-- .cause-content-wrap -->
+                                </div><!-- .cause-wrap -->
+					
+					</div>
+				{% endfor %}
+				
+				
 			</div>
+			{% else %}
+				<div class="row">
+					<p>Nothing Yet!, sorry!
+				</div>
+				
+			{% endif %}
+        
+             
 			<br />
 			<br />
 

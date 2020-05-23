@@ -22,7 +22,7 @@
                                 	<br />
                                 <br />
                                 <br />
-                                    <h8>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</h8>
+                                    <h8>Funmi Nehan Foundation was Created in July 2017. Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</h8>
                                   
                                 </header><!-- .entry-header -->
 
@@ -52,20 +52,7 @@
 
     <div class="portfolio-wrap">
         <div class="container">
-            <div class="row portfolio-container">
-            	{% for member in members %}
-                <div class="col-12 col-md-6 col-lg-4 portfolio-item">
-                    <div class="portfolio-cont">
-                        <a href="{% url 'member_detail' member.slug %}"><img src="{{ member.image.url }}" alt=""></a>
-
-                        <h3 class="entry-title"><a href="{% url 'member_detail' member.slug %}">{{ member.name }}</a></h3>
-                        <h4>{{ member.post }}</h4>
-                    </div>
-                </div>
-                {% endfor %}
-             </div>
-             <br />
-             <br />
+            
              
 			<div class="row portfolio-container">
 				{% for outreach in outreachs %}

@@ -18,7 +18,7 @@
                                 	<br />
                                 <br />
                                 <br />
-                                    <h8>Funmi Nehan Outreach was Created in July 2017. Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</h8>
+                                    <h8>Funmi Nehan Foundation was Created in July 2017. Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</h8>
                                   
                                 </header><!-- .entry-header -->
                                 
@@ -34,32 +34,81 @@
             </div><!-- .hero-content-wrap -->
         </div>
     </div>
-<br>
+<br />
+<br />
+<br />
     <div class="welcome-wrap">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="welcome-content">
                         <header class="entry-header">
-                            <h2 style="color: black" class="entry-title">Welcome to our Foundation</h2>
+                            <h2 style="color: black" class="entry-title">WHO WE ARE</h2>
                         </header><!-- .entry-header -->
 
                         <div class="entry-content mt-5">
-                            <p>We stand together with our global neighbours. Together we can create a world where everyone can live a full life, free from poverty. Read more about our values.</p>
+                            <p>
+                            We are The FN Foundation , a Non-profit organisation duly incorporated and registered in Nigeria under the Corporate Affairs Commissions.<p/>
+                            <p>Funmi Nehan Foundation was created in July 2017.
+At Funmi Nehan Foundation we aim to make everyone created by God smile through giving and impacting their lives.</p>
+							<p>We bridge the gap by providing for immediate needs of the less privilege ones in our society.</p>
+							<p>We ensure their daily / pressing needs are let to ensure a better living.</p>
+                        </div><!-- .entry-content -->
+
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 style="color: black" class="entry-title">WHAT WE DO</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>Alot of families can't afford their daily meal.</p>
+                            <p>Individuals are unable to start to start a trade due to lack of funds, children are unable to attend school due to lack of parental care or unable to pay their school fees.</p>
+                            <p>Alot of other Non-profit organisations are unable to meet up with daily needs due to lack of funds.</p>
+                            <p>We help families in such categories with provision  of food, clothing, school fees and trade set up to ensure their  basic  daily needs are met.</p>
+                            <p>We at Funmi Nehan Foundation become their support and put a smile to their face.
+We follow up on individuals and ensure they are well catered for.</p>
+                        </div><!-- .entry-content -->
+
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+                
+                
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 style="color: black" class="entry-title">How We Got Here</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p>Apart from having a passion to be a blessing.</p>
+                            <p>The vision was given to our founder over 3 years ago.</p>
+                            <p>She step out in faith 3 years later and the rest is history  
+Touching lives is our vision and we are totally fulfilled seeing every individual we come across smile on our little way.</p>
+
+<p>Our mission is to be a Blessing to the less privileged. Life is a gift and the only way to give back to the world is to Touch Lives.</p>
+<p>We have been to different states in Nigeria and  still serving through our monthly outreach and individual giving.</p>
+<p>We aim to continue serving/ meeting needs  and touch life globally.</p>
+<p>We are convinced that the world will eventually be a better place and the lack among us as human beings will be met if we continue serving and reaching out in love.</p>
                         </div><!-- .entry-content -->
 
                     </div><!-- .welcome-content -->
                 </div><!-- .col -->
 
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="{% static 'main/images/main_logo.PNG' %}" width="100%" height="auto" alt="welcome">
-                </div><!-- .col -->
+                
+
             </div><!-- .row -->
         </div><!-- .container -->
     </div><!-- .home-page-icon-boxes -->
-    <br />
+    <br /><br />
+<br />
+<br />
+    
 
-    <div class="about-stats">
+    <div class="our-causes">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3">
@@ -105,39 +154,4 @@
         </div>
     </div>
 
-    <div class="about-testimonial">
-        <div class="container">
-            <div class="row">
-            	{% for member in members %}
-                <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="testimonial-cont">
-                        <div class="entry-content">
-                            <p>{{ member.bio|truncatewords:15 }}.</p><br />
-                        </div>
-
-                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
-                        	<a href="{% url 'member_detail' member.slug %}">
-                            <img src="{{ member.image.url }}" alt="">
-
-                            <h4>{{ member.name }}, <br /><span>{{ member.post }}</span></h4>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-               {% endfor %}
-            </div>
-        </div>
-    </div>
-
-    <div class="help-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-                    <h2>Help us so we can help others</h2>
-
-                    <a class="btn orange-border" href="{% url 'pre_donation' %}">Donate now</a>
-                </div>
-            </div>
-        </div>
-    </div>
     {% endblock content %}

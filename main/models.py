@@ -23,7 +23,7 @@ class Comment(models.Model):
 		return self.name
 
 class Outreach(models.Model):
-	title = models.CharField(max_length=100)
+	title = models.CharField(max_length=100, default="No title")
 	body = models.TextField(default="Nothing yet")
 	location = models.CharField(max_length=200, default="No where")
 	image = models.ImageField(upload_to='main/outreach_image/')
@@ -45,12 +45,12 @@ class Outreach(models.Model):
     	
     
 class Member(models.Model):
-	name = models.CharField(max_length=100)
-	post = models.CharField(max_length=100)
+	name = models.CharField(max_length=100, default="No name")
+	post = models.CharField(max_length=100, default="No position")
 	bio = models.TextField(default="Nothing yet")
 	image = models.ImageField(upload_to='main/member_image/')
 	pub_date = models.DateTimeField(default=timezone.now)
-	slug = models.SlugField(unique=True, default="ray slug")
+	slug = models.SlugField(unique=True)
 	
 	def save(self, *args, **kwargs):
 		self.slug = slugify(self.name)
@@ -66,7 +66,7 @@ class Member(models.Model):
     	
     	
 class Event(models.Model):
-	title = models.CharField(max_length=100)
+	title = models.CharField(max_length=100, default="No title")
 	#video = models.FileField(upload_to='project/event/video/', null=True, verbose_name="")
 	video_url = models.TextField(default="Nothing yet")
 	pub_date = models.DateTimeField(default=timezone.now)
